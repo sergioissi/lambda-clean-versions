@@ -41,12 +41,12 @@ class LambdaCronStack(core.Stack):
             )
         )
 
-        # Run every day at 6PM UTC
+        # Run every first monday of every month at 00:01 AM UTC
         rule = aws_events.Rule(
             self, "Rule",
             schedule=aws_events.Schedule.cron(
                 minute='01',
-                hour='02',
+                hour='00',
                 month='*',
                 week_day='MON',
                 year='*'),
