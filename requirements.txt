@@ -1,0 +1,9 @@
+aws-cdk.aws-events
+aws-cdk.aws-events-targets
+aws-cdk.aws-iam
+aws-cdk.aws-lambda
+aws-cdk.aws-logs
+aws-cdk.core
+json-logging
+pytz
+boto3
