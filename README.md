@@ -1,8 +1,9 @@
 # Clean Serverless versions
 
 Created with Aws CDK, this lambda will run every first day of the month to delete old lambda versions (keeping the last 10).
-This is necessary when deploying with Serverless framework because it creates a new version of your function every time you deploy.
-Please take a look at <a href="https://docs.aws.amazon.com/lambda/latest/dg/limits.html">Lambda limits</a>
+This is necessary when deploying with Serverless framework because it creates (by default but it can be disabled) a new version
+of your function every time you deploy. Please take a look at <a href="https://docs.aws.amazon.com/lambda/latest/dg/limits.html">
+Lambda limits</a>.
 
 ## Setup
 
